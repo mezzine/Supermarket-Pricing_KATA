@@ -1,6 +1,6 @@
 # Supermarket-Pricing_KATA
 
-This is my implementation of the the Supermarket-Pricing KATA
+This is my implementation of the the Supermarket pricing KATA:
 
 The problem domain is something seemingly simple: pricing goods at supermarkets.
 
