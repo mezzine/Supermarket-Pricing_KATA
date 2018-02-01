@@ -33,7 +33,7 @@ public class TestByXProductForYUnit {
 	 * offer)
 	 */
 	@Test
-	public void calculatePriceXProductForYUnitWhenXIsMultipleOfOfferQt() {
+	public void TestGetXProductForYUnitWhenXIsMultipleOfOfferQt() {
 		productManager.addProduct(p1);
 		// Test the price of 6 products units
 		String newPrice = offer.getXProductForYUnit(p1.getUnitPrice(), 6, offer.getUnitScale(),
@@ -49,7 +49,7 @@ public class TestByXProductForYUnit {
 	 * offer)
 	 */
 	@Test
-	public void calculatePriceXProductForYUnitWhenXIsSmallerThenTheOfferQt() {
+	public void testGetXProductForYUnitWhenXIsSmallerThenTheOfferQt() {
 		productManager.addProduct(p1);
 		// Test the price of 2 products units
 		String newPrice = offer.getXProductForYUnit(p1.getUnitPrice(), 2, offer.getUnitScale(),
@@ -65,7 +65,7 @@ public class TestByXProductForYUnit {
 	 * offer)
 	 */
 	@Test
-	public void calculatePriceXProductForYUnitWhenXIsBiggerThenTheOfferQt() {
+	public void testGetXProductForYUnitWhenXIsBiggerThenTheOfferQt() {
 		productManager.addProduct(p1);
 		String newPrice = offer.getXProductForYUnit(p1.getUnitPrice(), 8, offer.getUnitScale(),
 				offer.getQuantityScale(), curr, p1.getProductUnit());
